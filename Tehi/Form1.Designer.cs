@@ -44,9 +44,9 @@
             this.LogListBox.FormattingEnabled = true;
             this.LogListBox.HorizontalScrollbar = true;
             this.LogListBox.ItemHeight = 16;
-            this.LogListBox.Location = new System.Drawing.Point(135, 171);
+            this.LogListBox.Location = new System.Drawing.Point(85, 171);
             this.LogListBox.Name = "LogListBox";
-            this.LogListBox.Size = new System.Drawing.Size(112, 36);
+            this.LogListBox.Size = new System.Drawing.Size(162, 36);
             this.LogListBox.TabIndex = 0;
             // 
             // statusStrip1
@@ -76,6 +76,7 @@
             this.DealButton.TabIndex = 2;
             this.DealButton.Text = "Deal";
             this.DealButton.UseVisualStyleBackColor = true;
+            this.DealButton.Click += new System.EventHandler(this.DealButton_Click);
             // 
             // Form1
             // 

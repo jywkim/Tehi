@@ -16,5 +16,9 @@ namespace Tehi
         {
             InitializeComponent();
         }
+
+        private void DealButton_Click(object sender, EventArgs e)
+        {
+            LogListBox.Items.Clear();            LogListBox.Items.Add("The spade symbol is \u2660");            StatusLabel.Text = "Deal button pressed";        }
     }
 }
