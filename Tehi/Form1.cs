@@ -74,5 +74,17 @@ namespace Tehi
         {
             SwapCard(4);
         }
+
+        private void tableColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = colorDialog1.ShowDialog(this);
+            if (result == DialogResult.Cancel) return;
+            BackColor = colorDialog1.Color;
+        }
+
+        private void resetDefaultColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackColor = Color.Green;
+        }
     }
 }
