@@ -44,6 +44,11 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.LoginButton = new System.Windows.Forms.Button();
+            this.SwapButton0 = new System.Windows.Forms.Button();
+            this.SwapButton4 = new System.Windows.Forms.Button();
+            this.SwapButton3 = new System.Windows.Forms.Button();
+            this.SwapButton2 = new System.Windows.Forms.Button();
+            this.SwapButton1 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +62,7 @@
             this.LogListBox.FormattingEnabled = true;
             this.LogListBox.HorizontalScrollbar = true;
             this.LogListBox.ItemHeight = 16;
-            this.LogListBox.Location = new System.Drawing.Point(115, 108);
+            this.LogListBox.Location = new System.Drawing.Point(115, 43);
             this.LogListBox.Name = "LogListBox";
             this.LogListBox.Size = new System.Drawing.Size(162, 36);
             this.LogListBox.TabIndex = 0;
@@ -184,12 +189,77 @@
             this.LoginButton.UseVisualStyleBackColor = true;
             this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
+            // SwapButton0
+            // 
+            this.SwapButton0.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SwapButton0.Location = new System.Drawing.Point(115, 122);
+            this.SwapButton0.Name = "SwapButton0";
+            this.SwapButton0.Size = new System.Drawing.Size(96, 32);
+            this.SwapButton0.TabIndex = 6;
+            this.SwapButton0.Text = "Swap";
+            this.SwapButton0.UseVisualStyleBackColor = true;
+            this.SwapButton0.Click += new System.EventHandler(this.SwapButton0_Click);
+            // 
+            // SwapButton4
+            // 
+            this.SwapButton4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SwapButton4.Location = new System.Drawing.Point(523, 122);
+            this.SwapButton4.Name = "SwapButton4";
+            this.SwapButton4.Size = new System.Drawing.Size(96, 32);
+            this.SwapButton4.TabIndex = 7;
+            this.SwapButton4.Text = "Swap";
+            this.SwapButton4.UseVisualStyleBackColor = true;
+            this.SwapButton4.Click += new System.EventHandler(this.SwapButton4_Click);
+            // 
+            // SwapButton3
+            // 
+            this.SwapButton3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SwapButton3.Location = new System.Drawing.Point(421, 122);
+            this.SwapButton3.Name = "SwapButton3";
+            this.SwapButton3.Size = new System.Drawing.Size(96, 32);
+            this.SwapButton3.TabIndex = 8;
+            this.SwapButton3.Text = "Swap";
+            this.SwapButton3.UseVisualStyleBackColor = true;
+            this.SwapButton3.Click += new System.EventHandler(this.SwapButton3_Click);
+            // 
+            // SwapButton2
+            // 
+            this.SwapButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SwapButton2.Location = new System.Drawing.Point(319, 122);
+            this.SwapButton2.Name = "SwapButton2";
+            this.SwapButton2.Size = new System.Drawing.Size(96, 32);
+            this.SwapButton2.TabIndex = 9;
+            this.SwapButton2.Text = "Swap";
+            this.SwapButton2.UseVisualStyleBackColor = true;
+            this.SwapButton2.Click += new System.EventHandler(this.SwapButton2_Click);
+            // 
+            // SwapButton1
+            // 
+            this.SwapButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SwapButton1.Location = new System.Drawing.Point(217, 122);
+            this.SwapButton1.Name = "SwapButton1";
+            this.SwapButton1.Size = new System.Drawing.Size(96, 32);
+            this.SwapButton1.TabIndex = 10;
+            this.SwapButton1.Text = "Swap";
+            this.SwapButton1.UseVisualStyleBackColor = true;
+            this.SwapButton1.Click += new System.EventHandler(this.SwapButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(649, 381);
+            this.Controls.Add(this.SwapButton1);
+            this.Controls.Add(this.SwapButton2);
+            this.Controls.Add(this.SwapButton3);
+            this.Controls.Add(this.SwapButton4);
+            this.Controls.Add(this.SwapButton0);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.NameTextBox);
             this.Controls.Add(this.DealButton);
@@ -227,6 +297,11 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.TextBox NameTextBox;
         private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.Button SwapButton0;
+        private System.Windows.Forms.Button SwapButton4;
+        private System.Windows.Forms.Button SwapButton3;
+        private System.Windows.Forms.Button SwapButton2;
+        private System.Windows.Forms.Button SwapButton1;
     }
 }
 

@@ -44,5 +44,35 @@ namespace Tehi
         private void LoginButton_Click(object sender, EventArgs e)
         {
             StatusLabel.Text = "Login button pressed";        }
+
+        private void SwapCard(int ix)
+        {
+            StatusLabel.Text = "Swap button " + ix + " pressed.";
+        }
+
+        private void SwapButton0_Click(object sender, EventArgs e)
+        {
+            SwapCard(0);
+        }
+
+        private void SwapButton1_Click(object sender, EventArgs e)
+        {
+            SwapCard(1);
+        }
+
+        private void SwapButton2_Click(object sender, EventArgs e)
+        {
+            SwapCard(2);
+        }
+
+        private void SwapButton3_Click(object sender, EventArgs e)
+        {
+            SwapCard(3);
+        }
+
+        private void SwapButton4_Click(object sender, EventArgs e)
+        {
+            SwapCard(4);
+        }
     }
 }
