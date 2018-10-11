@@ -40,5 +40,9 @@ namespace Tehi
         {
             MessageBox.Show(this, "Jonathan Kim");
         }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            StatusLabel.Text = "Login button pressed";        }
     }
 }

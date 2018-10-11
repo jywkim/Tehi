@@ -42,6 +42,8 @@
             this.tableColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
+            this.LoginButton = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +57,7 @@
             this.LogListBox.FormattingEnabled = true;
             this.LogListBox.HorizontalScrollbar = true;
             this.LogListBox.ItemHeight = 16;
-            this.LogListBox.Location = new System.Drawing.Point(85, 171);
+            this.LogListBox.Location = new System.Drawing.Point(115, 108);
             this.LogListBox.Name = "LogListBox";
             this.LogListBox.Size = new System.Drawing.Size(162, 36);
             this.LogListBox.TabIndex = 0;
@@ -81,7 +83,7 @@
             // 
             this.DealButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.DealButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DealButton.Location = new System.Drawing.Point(280, 171);
+            this.DealButton.Location = new System.Drawing.Point(308, 171);
             this.DealButton.Name = "DealButton";
             this.DealButton.Size = new System.Drawing.Size(96, 32);
             this.DealButton.TabIndex = 2;
@@ -114,21 +116,21 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // top10ToolStripMenuItem
             // 
             this.top10ToolStripMenuItem.Name = "top10ToolStripMenuItem";
-            this.top10ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.top10ToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.top10ToolStripMenuItem.Text = "&Top 10";
             this.top10ToolStripMenuItem.Click += new System.EventHandler(this.top10ToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -143,7 +145,7 @@
             // tableColourToolStripMenuItem
             // 
             this.tableColourToolStripMenuItem.Name = "tableColourToolStripMenuItem";
-            this.tableColourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tableColourToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.tableColourToolStripMenuItem.Text = "&Table Colour";
             // 
             // helpToolStripMenuItem
@@ -157,9 +159,30 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // NameTextBox
+            // 
+            this.NameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTextBox.Location = new System.Drawing.Point(115, 171);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(73, 26);
+            this.NameTextBox.TabIndex = 4;
+            // 
+            // LoginButton
+            // 
+            this.LoginButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.Location = new System.Drawing.Point(206, 171);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(96, 32);
+            this.LoginButton.TabIndex = 5;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // Form1
             // 
@@ -167,6 +190,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(649, 381);
+            this.Controls.Add(this.LoginButton);
+            this.Controls.Add(this.NameTextBox);
             this.Controls.Add(this.DealButton);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -200,6 +225,8 @@
         private System.Windows.Forms.ToolStripMenuItem tableColourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.TextBox NameTextBox;
+        private System.Windows.Forms.Button LoginButton;
     }
 }
 
