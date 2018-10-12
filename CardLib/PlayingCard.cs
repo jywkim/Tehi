@@ -8,8 +8,7 @@ namespace CardLib
 {
     public enum CardSuit
     {
-        Clubs, Diamonds, Hearts,
-        Spades
+        Clubs, Diamonds, Hearts, Spades
     }
 
     public class PlayingCard
