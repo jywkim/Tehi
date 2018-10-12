@@ -27,6 +27,17 @@ namespace CardLib
             FaceUp = !FaceUp;
         }
 
+        public string Code
+        {
+            get
+            {
+                if (!FaceUp) return "XX";
+                string suits = "CDHS";
+                string ranks = " A23456789TJQK";
+                return "" + ranks[Rank] + suits[(int)Suit];
+            }
+        }
+
         public override string ToString()
         {
             if (!FaceUp) return "XX";
