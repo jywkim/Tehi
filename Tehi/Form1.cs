@@ -20,7 +20,8 @@ namespace Tehi
 
         private void DealButton_Click(object sender, EventArgs e)
         {
-            LogListBox.Items.Clear();            PlayingCard card = new PlayingCard(PlayingCard.Queen, CardSuit.Clubs);            card.Flip();            LogListBox.Items.Add("Card: " + card);            StatusLabel.Text = "Deal button pressed";        }
+            LogListBox.Items.Clear();            PlayingCard card = new PlayingCard(PlayingCard.Queen, CardSuit.Clubs);            card.Flip();            LogListBox.Items.Add("Card: " + card);
+            LogListBox.Items.Add("Rank: " + card.Rank);            LogListBox.Items.Add("Suit: " + card.Suit);            StatusLabel.Text = "Deal button pressed";        }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
