@@ -33,6 +33,12 @@ namespace CardLib
             return temp;
         }
 
+        public void Add(PlayingCard card)
+        {
+            card.FaceUp = true;
+            cardStack.Push(card);
+        }
+
         public override string ToString()
         {
             string rep = string.Empty;            foreach (PlayingCard card in cardStack)
