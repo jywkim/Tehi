@@ -25,5 +25,11 @@ namespace CardLib
         {
             faceUp = !faceUp;
         }
+
+        public override string ToString()
+        {
+            if (!this.faceUp) return "XX";
+            return Rank + " " + Suit;
+        }
     }
 }
