@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CardLib;
 
 namespace Tehi
 {
@@ -19,7 +20,7 @@ namespace Tehi
 
         private void DealButton_Click(object sender, EventArgs e)
         {
-            LogListBox.Items.Clear();            LogListBox.Items.Add("The spade symbol is \u2660");            StatusLabel.Text = "Deal button pressed";        }
+            LogListBox.Items.Clear();            PlayingCard card = new PlayingCard(5, CardSuit.Clubs);            card.Flip();            LogListBox.Items.Add("Card: " + card);            StatusLabel.Text = "Deal button pressed";        }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
