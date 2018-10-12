@@ -14,6 +14,11 @@ namespace CardLib
 
     public class PlayingCard
     {
-        private bool faceUp;        public int Rank { get; private set; }        public CardSuit Suit { get; private set; }
+        private bool faceUp;        public int Rank { get; private set; }        public CardSuit Suit { get; private set; }        public PlayingCard(int rank, CardSuit suit)
+        {
+            Rank = rank;
+            Suit = suit;
+            faceUp = false;
+        }
     }
 }
