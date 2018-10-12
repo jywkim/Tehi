@@ -32,6 +32,7 @@ namespace Tehi
             LogListBox.Items.Add("Index:" + card.Index);
             //LogListBox.Items.Add("Eyes: " + card.Eyes);
             //StatusLabel.Text = "Deal button pressed";
+            deck.Add(card);
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
