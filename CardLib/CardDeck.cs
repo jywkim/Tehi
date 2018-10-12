@@ -26,6 +26,13 @@ namespace CardLib
             }
         }
 
+        public PlayingCard Deal()
+        {
+            PlayingCard temp = cardStack.Pop();
+            temp.FaceUp = false;
+            return temp;
+        }
+
         public override string ToString()
         {
             string rep = string.Empty;            foreach (PlayingCard card in cardStack)
