@@ -23,6 +23,7 @@ namespace Tehi
         private void DealButton_Click(object sender, EventArgs e)
         {
             LogListBox.Items.Clear();
+            deck.Shuffle();
             LogListBox.Items.Add(deck.ToString());            PlayingCard card = deck.Deal();            //FaceCard card = new FaceCard(FaceCard.Jack, CardSuit.Spades);
             card.FaceUp = true;
             LogListBox.Items.Add("Card: " + card);
