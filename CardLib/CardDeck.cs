@@ -9,6 +9,7 @@ namespace CardLib
     public class CardDeck
     {
         private Stack<PlayingCard> cardStack = new Stack<PlayingCard>();
+        private Random rnd = new Random();
 
         public CardDeck()
         {
@@ -37,6 +38,19 @@ namespace CardLib
         {
             card.FaceUp = true;
             cardStack.Push(card);
+        }
+
+        public void Shuffle()
+        {
+            PlayingCard[] cardArray = cardStack.ToArray();
+            cardStack.Clear();
+            for (int i = 0; i < cardArray.Length; i++)
+            {
+                int swapIndex = rnd.Next(0, cardArray.Length);                PlayingCard temp = cardArray[swapIndex];
+                cardArray[swapIndex] = cardArray[i];
+                cardArray[i] = temp;            }
+            foreach (PlayingCard card in cardArray)
+                cardStack.Push(card);
         }
 
         public override string ToString()
