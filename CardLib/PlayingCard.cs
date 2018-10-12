@@ -28,8 +28,10 @@ namespace CardLib
 
         public override string ToString()
         {
-            if (!this.faceUp) return "XX";
-            return Rank + " " + Suit;
+            if (!faceUp) return "XX";
+            string suits = "\u2663\u2666\u2665\u2660";
+            string ranks = " A23456789TJQK";
+            return "" + ranks[Rank] + suits[(int)Suit];
         }
     }
 }
