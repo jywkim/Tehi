@@ -20,5 +20,10 @@ namespace CardLib
             Suit = suit;
             faceUp = false;
         }
+
+        public void Flip()
+        {
+            faceUp = !faceUp;
+        }
     }
 }
