@@ -13,6 +13,8 @@ namespace Tehi
 {
     public partial class Form1 : Form
     {
+        private CardDeck deck = new CardDeck();
+
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace Tehi
         private void DealButton_Click(object sender, EventArgs e)
         {
             LogListBox.Items.Clear();
-            FaceCard card = new FaceCard(FaceCard.Jack, CardSuit.Spades);
+            LogListBox.Items.Add(deck.ToString());            /*FaceCard card = new FaceCard(FaceCard.Jack, CardSuit.Spades);
             card.FaceUp = true;
             LogListBox.Items.Add("Card: " + card);
             LogListBox.Items.Add("Rank: " + card.Rank);
@@ -29,7 +31,7 @@ namespace Tehi
             LogListBox.Items.Add("Code:" + card.Code);
             LogListBox.Items.Add("Index:" + card.Index);
             LogListBox.Items.Add("Eyes: " + card.Eyes);
-            StatusLabel.Text = "Deal button pressed";
+            StatusLabel.Text = "Deal button pressed";*/
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)

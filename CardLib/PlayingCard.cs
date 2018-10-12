@@ -13,11 +13,19 @@ namespace CardLib
 
     public class PlayingCard
     {
-        public const int Ace = 1;        public const int Jack = 11;
-        public const int Queen = 12;        public const int King = 13;
-        public bool FaceUp { get; set; }        public int Rank { get; private set; }        public CardSuit Suit { get; private set; }        public PlayingCard(int rank, CardSuit suit)
+        public const int Ace = 1;
+        public const int Jack = 11;
+        public const int Queen = 12;
+        public const int King = 13;
+
+        public bool FaceUp { get; set; }
+        public int Rank { get; private set; }
+        public CardSuit Suit { get; private set; }
+
+        public PlayingCard(int rank, CardSuit suit)
         {
-            ValidateRange(rank, Ace, King);            Rank = rank;
+            ValidateRange(rank, Ace, King);
+            Rank = rank;
             Suit = suit;
             FaceUp = false;
         }
