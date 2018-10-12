@@ -66,9 +66,9 @@
             this.LogListBox.FormattingEnabled = true;
             this.LogListBox.HorizontalScrollbar = true;
             this.LogListBox.ItemHeight = 16;
-            this.LogListBox.Location = new System.Drawing.Point(85, 73);
+            this.LogListBox.Location = new System.Drawing.Point(85, 57);
             this.LogListBox.Name = "LogListBox";
-            this.LogListBox.Size = new System.Drawing.Size(504, 100);
+            this.LogListBox.Size = new System.Drawing.Size(504, 132);
             this.LogListBox.TabIndex = 0;
             // 
             // statusStrip1
