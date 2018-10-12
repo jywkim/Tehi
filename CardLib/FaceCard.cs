@@ -27,5 +27,11 @@ namespace CardLib
                 Eyes = 1;
             }
         }
+
+        public override string ToString()
+        {
+            if (!FaceUp) return base.ToString();
+            return base.ToString() + Eyes;
+        }
     }
 }
