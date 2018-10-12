@@ -14,6 +14,18 @@ namespace CardLib
             : base(rank, suit)
         {
             Eyes = 2;
+            if ((rank == Jack) && (suit == CardSuit.Hearts))
+            {
+                Eyes = 1;
+            }
+            if ((rank == Jack) && (suit == CardSuit.Spades))
+            {
+                Eyes = 1;
+            }
+            if ((rank == King) && (suit == CardSuit.Diamonds))
+            {
+                Eyes = 1;
+            }
         }
     }
 }
