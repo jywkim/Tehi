@@ -55,7 +55,7 @@ namespace CardLib
             return "" + ranks[Rank] + suits[(int)Suit];
         }
 
-        private void ValidateRange(int val, int min, int max)
+        protected void ValidateRange(int val, int min, int max)
         {
             if ((val < min) || (val > max))
             {

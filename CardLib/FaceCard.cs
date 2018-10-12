@@ -13,7 +13,7 @@ namespace CardLib
         public FaceCard(int rank, CardSuit suit)
             : base(rank, suit)
         {
-            Eyes = 2;
+            ValidateRange(rank, Jack, King);            Eyes = 2;
             if ((rank == Jack) && (suit == CardSuit.Hearts))
             {
                 Eyes = 1;
