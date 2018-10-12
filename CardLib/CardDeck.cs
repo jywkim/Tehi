@@ -25,5 +25,14 @@ namespace CardLib
                 }
             }
         }
+
+        public override string ToString()
+        {
+            string rep = string.Empty;            foreach (PlayingCard card in cardStack)
+            {
+                rep = rep + card + " ";
+            }
+            return rep.Trim();
+        }
     }
 }
