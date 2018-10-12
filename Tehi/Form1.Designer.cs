@@ -41,6 +41,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetDefaultColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NameTextBox = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.SwapButton2 = new System.Windows.Forms.Button();
             this.SwapButton1 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.resetDefaultColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PlayingCardImageList = new System.Windows.Forms.ImageList(this.components);
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -66,9 +66,9 @@
             this.LogListBox.FormattingEnabled = true;
             this.LogListBox.HorizontalScrollbar = true;
             this.LogListBox.ItemHeight = 16;
-            this.LogListBox.Location = new System.Drawing.Point(115, 43);
+            this.LogListBox.Location = new System.Drawing.Point(85, 73);
             this.LogListBox.Name = "LogListBox";
-            this.LogListBox.Size = new System.Drawing.Size(162, 36);
+            this.LogListBox.Size = new System.Drawing.Size(504, 100);
             this.LogListBox.TabIndex = 0;
             // 
             // statusStrip1
@@ -92,7 +92,7 @@
             // 
             this.DealButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.DealButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DealButton.Location = new System.Drawing.Point(308, 171);
+            this.DealButton.Location = new System.Drawing.Point(289, 248);
             this.DealButton.Name = "DealButton";
             this.DealButton.Size = new System.Drawing.Size(96, 32);
             this.DealButton.TabIndex = 2;
@@ -155,9 +155,16 @@
             // tableColourToolStripMenuItem
             // 
             this.tableColourToolStripMenuItem.Name = "tableColourToolStripMenuItem";
-            this.tableColourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tableColourToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.tableColourToolStripMenuItem.Text = "&Table Colour";
             this.tableColourToolStripMenuItem.Click += new System.EventHandler(this.tableColourToolStripMenuItem_Click);
+            // 
+            // resetDefaultColorToolStripMenuItem
+            // 
+            this.resetDefaultColorToolStripMenuItem.Name = "resetDefaultColorToolStripMenuItem";
+            this.resetDefaultColorToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.resetDefaultColorToolStripMenuItem.Text = "Reset Default Color";
+            this.resetDefaultColorToolStripMenuItem.Click += new System.EventHandler(this.resetDefaultColorToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -170,7 +177,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -178,16 +185,16 @@
             // 
             this.NameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTextBox.Location = new System.Drawing.Point(115, 171);
+            this.NameTextBox.Location = new System.Drawing.Point(85, 248);
             this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(73, 26);
+            this.NameTextBox.Size = new System.Drawing.Size(96, 26);
             this.NameTextBox.TabIndex = 4;
             // 
             // LoginButton
             // 
             this.LoginButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Location = new System.Drawing.Point(206, 171);
+            this.LoginButton.Location = new System.Drawing.Point(187, 248);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(96, 32);
             this.LoginButton.TabIndex = 5;
@@ -199,7 +206,7 @@
             // 
             this.SwapButton0.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton0.Location = new System.Drawing.Point(115, 122);
+            this.SwapButton0.Location = new System.Drawing.Point(85, 199);
             this.SwapButton0.Name = "SwapButton0";
             this.SwapButton0.Size = new System.Drawing.Size(96, 32);
             this.SwapButton0.TabIndex = 6;
@@ -211,7 +218,7 @@
             // 
             this.SwapButton4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton4.Location = new System.Drawing.Point(523, 122);
+            this.SwapButton4.Location = new System.Drawing.Point(493, 199);
             this.SwapButton4.Name = "SwapButton4";
             this.SwapButton4.Size = new System.Drawing.Size(96, 32);
             this.SwapButton4.TabIndex = 7;
@@ -223,7 +230,7 @@
             // 
             this.SwapButton3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton3.Location = new System.Drawing.Point(421, 122);
+            this.SwapButton3.Location = new System.Drawing.Point(391, 199);
             this.SwapButton3.Name = "SwapButton3";
             this.SwapButton3.Size = new System.Drawing.Size(96, 32);
             this.SwapButton3.TabIndex = 8;
@@ -235,7 +242,7 @@
             // 
             this.SwapButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton2.Location = new System.Drawing.Point(319, 122);
+            this.SwapButton2.Location = new System.Drawing.Point(289, 199);
             this.SwapButton2.Name = "SwapButton2";
             this.SwapButton2.Size = new System.Drawing.Size(96, 32);
             this.SwapButton2.TabIndex = 9;
@@ -247,20 +254,13 @@
             // 
             this.SwapButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton1.Location = new System.Drawing.Point(217, 122);
+            this.SwapButton1.Location = new System.Drawing.Point(187, 199);
             this.SwapButton1.Name = "SwapButton1";
             this.SwapButton1.Size = new System.Drawing.Size(96, 32);
             this.SwapButton1.TabIndex = 10;
             this.SwapButton1.Text = "Swap";
             this.SwapButton1.UseVisualStyleBackColor = true;
             this.SwapButton1.Click += new System.EventHandler(this.SwapButton1_Click);
-            // 
-            // resetDefaultColorToolStripMenuItem
-            // 
-            this.resetDefaultColorToolStripMenuItem.Name = "resetDefaultColorToolStripMenuItem";
-            this.resetDefaultColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.resetDefaultColorToolStripMenuItem.Text = "Reset Default Color";
-            this.resetDefaultColorToolStripMenuItem.Click += new System.EventHandler(this.resetDefaultColorToolStripMenuItem_Click);
             // 
             // PlayingCardImageList
             // 
