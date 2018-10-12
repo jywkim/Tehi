@@ -14,6 +14,8 @@ namespace CardLib
 
     public class PlayingCard
     {
+        public const int Ace = 1;        public const int Jack = 11;
+        public const int Queen = 12;        public const int King = 13;
         private bool faceUp;        public int Rank { get; private set; }        public CardSuit Suit { get; private set; }        public PlayingCard(int rank, CardSuit suit)
         {
             Rank = rank;
