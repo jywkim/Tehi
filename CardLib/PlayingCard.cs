@@ -27,6 +27,15 @@ namespace CardLib
             FaceUp = !FaceUp;
         }
 
+        public int Index
+        {
+            get
+            {
+                if (!FaceUp) return 0;
+                return (int)Suit * 13 + Rank;
+            }
+        }
+
         public string Code
         {
             get
