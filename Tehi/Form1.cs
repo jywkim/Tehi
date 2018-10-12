@@ -20,9 +20,17 @@ namespace Tehi
 
         private void DealButton_Click(object sender, EventArgs e)
         {
-            LogListBox.Items.Clear();            FaceCard card = new FaceCard(FaceCard.Jack, CardSuit.Spades);            card.FaceUp = true;            LogListBox.Items.Add("Card: " + card);
-            LogListBox.Items.Add("Rank: " + card.Rank);            LogListBox.Items.Add("Suit: " + card.Suit);            LogListBox.Items.Add("Code:" + card.Code);
-            LogListBox.Items.Add("Index:" + card.Index);            LogListBox.Items.Add("Eyes: " + card.Eyes);            StatusLabel.Text = "Deal button pressed";        }
+            LogListBox.Items.Clear();
+            FaceCard card = new FaceCard(FaceCard.Jack, CardSuit.Spades);
+            card.FaceUp = true;
+            LogListBox.Items.Add("Card: " + card);
+            LogListBox.Items.Add("Rank: " + card.Rank);
+            LogListBox.Items.Add("Suit: " + card.Suit);
+            LogListBox.Items.Add("Code:" + card.Code);
+            LogListBox.Items.Add("Index:" + card.Index);
+            LogListBox.Items.Add("Eyes: " + card.Eyes);
+            StatusLabel.Text = "Deal button pressed";
+        }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -32,7 +40,8 @@ namespace Tehi
 
         private void top10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StatusLabel.Text = "Top 10 chosen";        }
+            StatusLabel.Text = "Top 10 chosen";
+        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -46,7 +55,8 @@ namespace Tehi
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            StatusLabel.Text = "Login button pressed";        }
+            StatusLabel.Text = "Login button pressed";
+        }
 
         private void SwapCard(int ix)
         {
