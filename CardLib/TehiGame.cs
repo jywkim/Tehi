@@ -8,7 +8,24 @@ namespace CardLib
 {
     public class TehiGame
     {
-        private CardDeck deck = new CardDeck();        List<PlayingCard> hand = new List<PlayingCard>();        public void Deal()        {
+        private CardDeck deck = new CardDeck();        List<PlayingCard> hand = new List<PlayingCard>();        public int Score
+        {
+            get
+            {
+                int totalEyes = 0;
+                int totalRank = 0;
+                foreach (PlayingCard card in hand)
+                {
+                    if (card is FaceCard)
+                    {
+                        FaceCard face = (FaceCard)card;
+                        totalEyes += face.Eyes;
+                    }
+                    else totalRank += card.Rank;
+                }
+                return totalRank * totalEyes;
+            }
+        }        public void Deal()        {
             foreach (PlayingCard card in hand) deck.Add(card);
             hand.Clear();
             deck.Shuffle();
