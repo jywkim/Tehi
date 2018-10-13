@@ -24,7 +24,9 @@ namespace Tehi
         {
             LogListBox.Items.Clear();
             deck.Shuffle();
-            LogListBox.Items.Add(deck.ToString());            PlayingCard card = deck.Deal();            //FaceCard card = new FaceCard(FaceCard.Jack, CardSuit.Spades);
+            LogListBox.Items.Add(deck.ToString());
+            PlayingCard card = deck.Deal();
+            //FaceCard card = new FaceCard(FaceCard.Jack, CardSuit.Spades);
             card.FaceUp = true;
             LogListBox.Items.Add("Card: " + card);
             LogListBox.Items.Add("Rank: " + card.Rank);

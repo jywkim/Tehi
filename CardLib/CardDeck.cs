@@ -46,16 +46,19 @@ namespace CardLib
             cardStack.Clear();
             for (int i = 0; i < cardArray.Length; i++)
             {
-                int swapIndex = rnd.Next(0, cardArray.Length);                PlayingCard temp = cardArray[swapIndex];
+                int swapIndex = rnd.Next(0, cardArray.Length);
+                PlayingCard temp = cardArray[swapIndex];
                 cardArray[swapIndex] = cardArray[i];
-                cardArray[i] = temp;            }
+                cardArray[i] = temp;
+            }
             foreach (PlayingCard card in cardArray)
                 cardStack.Push(card);
         }
 
         public override string ToString()
         {
-            string rep = string.Empty;            foreach (PlayingCard card in cardStack)
+            string rep = string.Empty;
+            foreach (PlayingCard card in cardStack)
             {
                 rep = rep + card + " ";
             }
