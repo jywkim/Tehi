@@ -36,6 +36,7 @@ namespace Tehi
         {
             LogListBox.Items.Clear();
             StatusLabel.Text = string.Empty;
+            game = new TehiGame();
         }
 
         private void top10ToolStripMenuItem_Click(object sender, EventArgs e)
