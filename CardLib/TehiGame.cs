@@ -8,6 +8,9 @@ namespace CardLib
 {
     public class TehiGame
     {
+        public int HandsDealt { get; private set; }
+        public int BestHandScore { get; private set; }
+
         private CardDeck deck = new CardDeck();        List<PlayingCard> hand = new List<PlayingCard>();        public int Score
         {
             get
@@ -35,6 +38,9 @@ namespace CardLib
                 card.FaceUp = true;
                 hand.Add(card);
             }
+            HandsDealt++;
+            if (Score > BestHandScore)
+                BestHandScore = Score;
         }        public override string ToString()
         {
             string rep = string.Empty;
