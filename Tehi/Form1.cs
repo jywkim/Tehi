@@ -29,7 +29,7 @@ namespace Tehi
         private void ShowOutput()
         {
             LogListBox.Items.Clear();
-            LogListBox.Items.Add(game.ToString());        }
+            LogListBox.Items.Add(game.ToString());            LogListBox.Items.Add("Score: " + game.Score);        }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
