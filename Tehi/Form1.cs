@@ -56,6 +56,11 @@ namespace Tehi
         {
             LogListBox.Items.Clear();
             StatusLabel.Text = string.Empty;
+            PictureBox[] images = {pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5};
+            foreach (PictureBox box in images)
+            {
+                box.Visible = false;
+            }
             game = new TehiGame();
         }
 
