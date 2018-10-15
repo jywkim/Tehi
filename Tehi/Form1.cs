@@ -40,6 +40,13 @@ namespace Tehi
             LogListBox.Items.Add("Hands Dealt: " + game.HandsDealt);
         }
 
+        private void PaintCard(PictureBox image, PlayingCard card)
+        {
+            image.Visible = true;
+            int ix = card.Index;
+            image.Image = PlayingCardImageList.Images[ix];
+        }
+
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LogListBox.Items.Clear();
