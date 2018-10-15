@@ -34,6 +34,11 @@ namespace Tehi
             {
                 LogListBox.Items.Add(c.ToString());
             }
+            PictureBox[] images = { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5 };
+            for (int i = 0; i < game.Count(); i++)
+            {
+                PaintCard(images[i], game.ElementAt(i));
+            }
             LogListBox.Items.Add(game.ToString());
             LogListBox.Items.Add("Score: " + game.Score);
             LogListBox.Items.Add("Best Hand Score: " + game.BestHandScore);
