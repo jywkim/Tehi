@@ -13,7 +13,8 @@ namespace Tehi
 {
     public partial class Form1 : Form
     {
-        private TehiGame game = new TehiGame();
+        private TehiGame game = new TehiGame();
+
         public Form1()
         {
             InitializeComponent();
@@ -29,8 +30,15 @@ namespace Tehi
         private void ShowOutput()
         {
             LogListBox.Items.Clear();
-            LogListBox.Items.Add(game.ToString());            LogListBox.Items.Add("Score: " + game.Score);            LogListBox.Items.Add("Best Hand Score: " + game.BestHandScore);
-            LogListBox.Items.Add("Hands Dealt: " + game.HandsDealt);        }
+            foreach (PlayingCard c in game)
+            {
+                LogListBox.Items.Add(c.ToString());
+            }
+            LogListBox.Items.Add(game.ToString());
+            LogListBox.Items.Add("Score: " + game.Score);
+            LogListBox.Items.Add("Best Hand Score: " + game.BestHandScore);
+            LogListBox.Items.Add("Hands Dealt: " + game.HandsDealt);
+        }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
