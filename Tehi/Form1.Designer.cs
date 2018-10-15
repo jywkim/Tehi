@@ -53,8 +53,18 @@
             this.SwapButton1 = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.PlayingCardImageList = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // LogListBox
@@ -66,16 +76,16 @@
             this.LogListBox.FormattingEnabled = true;
             this.LogListBox.HorizontalScrollbar = true;
             this.LogListBox.ItemHeight = 16;
-            this.LogListBox.Location = new System.Drawing.Point(85, 41);
+            this.LogListBox.Location = new System.Drawing.Point(89, 41);
             this.LogListBox.Name = "LogListBox";
-            this.LogListBox.Size = new System.Drawing.Size(504, 148);
+            this.LogListBox.Size = new System.Drawing.Size(500, 180);
             this.LogListBox.TabIndex = 0;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 359);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 464);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(649, 22);
             this.statusStrip1.TabIndex = 1;
@@ -92,7 +102,7 @@
             // 
             this.DealButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.DealButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DealButton.Location = new System.Drawing.Point(289, 248);
+            this.DealButton.Location = new System.Drawing.Point(289, 406);
             this.DealButton.Name = "DealButton";
             this.DealButton.Size = new System.Drawing.Size(96, 32);
             this.DealButton.TabIndex = 2;
@@ -185,7 +195,7 @@
             // 
             this.NameTextBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NameTextBox.Location = new System.Drawing.Point(85, 248);
+            this.NameTextBox.Location = new System.Drawing.Point(85, 406);
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.Size = new System.Drawing.Size(96, 26);
             this.NameTextBox.TabIndex = 4;
@@ -194,7 +204,7 @@
             // 
             this.LoginButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Location = new System.Drawing.Point(187, 248);
+            this.LoginButton.Location = new System.Drawing.Point(187, 406);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(96, 32);
             this.LoginButton.TabIndex = 5;
@@ -206,7 +216,7 @@
             // 
             this.SwapButton0.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton0.Location = new System.Drawing.Point(85, 199);
+            this.SwapButton0.Location = new System.Drawing.Point(85, 357);
             this.SwapButton0.Name = "SwapButton0";
             this.SwapButton0.Size = new System.Drawing.Size(96, 32);
             this.SwapButton0.TabIndex = 6;
@@ -218,7 +228,7 @@
             // 
             this.SwapButton4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton4.Location = new System.Drawing.Point(493, 199);
+            this.SwapButton4.Location = new System.Drawing.Point(493, 357);
             this.SwapButton4.Name = "SwapButton4";
             this.SwapButton4.Size = new System.Drawing.Size(96, 32);
             this.SwapButton4.TabIndex = 7;
@@ -230,7 +240,7 @@
             // 
             this.SwapButton3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton3.Location = new System.Drawing.Point(391, 199);
+            this.SwapButton3.Location = new System.Drawing.Point(391, 357);
             this.SwapButton3.Name = "SwapButton3";
             this.SwapButton3.Size = new System.Drawing.Size(96, 32);
             this.SwapButton3.TabIndex = 8;
@@ -242,7 +252,7 @@
             // 
             this.SwapButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton2.Location = new System.Drawing.Point(289, 199);
+            this.SwapButton2.Location = new System.Drawing.Point(289, 357);
             this.SwapButton2.Name = "SwapButton2";
             this.SwapButton2.Size = new System.Drawing.Size(96, 32);
             this.SwapButton2.TabIndex = 9;
@@ -254,7 +264,7 @@
             // 
             this.SwapButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SwapButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SwapButton1.Location = new System.Drawing.Point(187, 199);
+            this.SwapButton1.Location = new System.Drawing.Point(187, 357);
             this.SwapButton1.Name = "SwapButton1";
             this.SwapButton1.Size = new System.Drawing.Size(96, 32);
             this.SwapButton1.TabIndex = 10;
@@ -321,12 +331,67 @@
             this.PlayingCardImageList.Images.SetKeyName(52, "ks.gif");
             this.PlayingCardImageList.Images.SetKeyName(53, "00.gif");
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox1.Location = new System.Drawing.Point(102, 238);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 96);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox2.Location = new System.Drawing.Point(205, 238);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 96);
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox3.Location = new System.Drawing.Point(305, 238);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 96);
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox4.Location = new System.Drawing.Point(408, 238);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(69, 96);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox5.Location = new System.Drawing.Point(508, 238);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(69, 96);
+            this.pictureBox5.TabIndex = 15;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(649, 381);
+            this.ClientSize = new System.Drawing.Size(649, 486);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.SwapButton1);
             this.Controls.Add(this.SwapButton2);
             this.Controls.Add(this.SwapButton3);
@@ -347,6 +412,11 @@
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,6 +447,11 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ToolStripMenuItem resetDefaultColorToolStripMenuItem;
         public System.Windows.Forms.ImageList PlayingCardImageList;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
 
