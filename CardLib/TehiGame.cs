@@ -11,6 +11,7 @@ namespace CardLib
     {
         public int HandsDealt { get; private set; }
         public int BestHandScore { get; private set; }
+        public bool CanSwapCards { get; private set; }
 
         private CardDeck deck = new CardDeck();
         List<PlayingCard> hand = new List<PlayingCard>();
@@ -48,6 +49,17 @@ namespace CardLib
             HandsDealt++;
             if (Score > BestHandScore)
                 BestHandScore = Score;
+            CanSwapCards = true;
+        }
+
+        public void SwapCard(int cardIndex)
+        {
+            deck.Add(hand[cardIndex]);
+            deck.Shuffle();
+            hand[cardIndex] = deck.Deal();
+            hand[cardIndex].FaceUp = true;
+            if (Score > BestHandScore) BestHandScore = Score;
+            CanSwapCards = false;
         }
 
         public override string ToString()
