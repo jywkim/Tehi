@@ -215,6 +215,7 @@
             // SwapButton0
             // 
             this.SwapButton0.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton0.Enabled = false;
             this.SwapButton0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SwapButton0.Location = new System.Drawing.Point(85, 357);
             this.SwapButton0.Name = "SwapButton0";
@@ -227,6 +228,7 @@
             // SwapButton4
             // 
             this.SwapButton4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton4.Enabled = false;
             this.SwapButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SwapButton4.Location = new System.Drawing.Point(493, 357);
             this.SwapButton4.Name = "SwapButton4";
@@ -239,6 +241,7 @@
             // SwapButton3
             // 
             this.SwapButton3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton3.Enabled = false;
             this.SwapButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SwapButton3.Location = new System.Drawing.Point(391, 357);
             this.SwapButton3.Name = "SwapButton3";
@@ -251,6 +254,7 @@
             // SwapButton2
             // 
             this.SwapButton2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton2.Enabled = false;
             this.SwapButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SwapButton2.Location = new System.Drawing.Point(289, 357);
             this.SwapButton2.Name = "SwapButton2";
@@ -263,6 +267,7 @@
             // SwapButton1
             // 
             this.SwapButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.SwapButton1.Enabled = false;
             this.SwapButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SwapButton1.Location = new System.Drawing.Point(187, 357);
             this.SwapButton1.Name = "SwapButton1";

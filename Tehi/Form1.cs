@@ -35,9 +35,11 @@ namespace Tehi
                 LogListBox.Items.Add(c.ToString());
             }
             PictureBox[] images = { pictureBox1, pictureBox2, pictureBox3, pictureBox4, pictureBox5 };
+            Button[] swapButtons = { SwapButton0, SwapButton1, SwapButton2, SwapButton3, SwapButton4 };
             for (int i = 0; i < game.Count(); i++)
             {
                 PaintCard(images[i], game.ElementAt(i));
+                swapButtons[i].Enabled = game.CanSwapCards;
             }
             LogListBox.Items.Add(game.ToString());
             LogListBox.Items.Add("Score: " + game.Score);
