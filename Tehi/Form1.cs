@@ -89,6 +89,8 @@ namespace Tehi
         private void SwapCard(int ix)
         {
             StatusLabel.Text = "Swap button " + ix + " pressed.";
+            game.SwapCard(ix);
+            ShowOutput();
         }
 
         private void SwapButton0_Click(object sender, EventArgs e)
